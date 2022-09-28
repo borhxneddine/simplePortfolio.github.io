@@ -201,10 +201,10 @@ h6{
 
 
 
-@media screen and  (max-width: 767px) {
+@media all and  (max-width: 394px) {
     .container {
         
-        max-width: 540px;
+        max-width: 390px;
     }
     .logo{
         padding-left: 20px;
@@ -216,13 +216,13 @@ h6{
         display: block;
         padding-top: 10px;
         margin-bottom: -68px;
-        margin-left: 450px;
+        margin-left: 320px;
     }
     label #cancel{
         display: none;
         padding-top: 10px;
         margin-bottom: -68px;
-        margin-left: 450px;
+        margin-left: 320px;
         
     }
     .nav-links{
@@ -230,8 +230,8 @@ h6{
         margin-top: 0px;
         position: fixed;
         top: 36px;
-        left: -200%;
-        width: 90%;
+        left: -100%;
+        width: 70%;
         height: 100vh;
         background: #000000c7;
         display: flex;
@@ -245,14 +245,14 @@ h6{
     }
     li{ 
         display: block;
-        margin: 40px 0;
+        margin: 40px 0px;
         line-height: 30px;
     }
     a{
         font-size: 25px;
     }
     #check:checked ~ ul{
-        left: 0;
+        left: -7%;
         transition: all 0.5s;
         
     }
@@ -265,32 +265,121 @@ h6{
         
     }
     h1{
-        margin-left: -120px;
-        font-size: 28px;
+        margin-left: -150px;
+        font-size: 23px;
     }
     h6{
-        margin-left: -120px;
+        margin-left: -150px;
         font-size: 12px;
     }
     .ilyes{
-        margin-left: 10px;
-        font-size: 28px;
+        margin-left: 6px;
+        font-size: 23px;
     }
     .container2{
-        font-size: 20px;
-        margin-left: -250px;
+        font-size: 19px;
+        margin-left: -290px;
         justify-content: space-evenly;
     }
     body{
-    background-position-y:-40% ;    
+    background-position-y:-45% ;    
     background-size: 1100px;
     }
 
 }
 
 
+@media (min-width: 394px) and (max-width: 667px) {
+    .container {
+        
+        max-width: 390px;
+    }
+    .logo{
+        padding-left: 20px;
+        padding-top: 20px;
+        
+    }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+    label #btn{
+        display: block;
+        padding-top: 10px;
+        margin-bottom: -68px;
+        margin-left: 360px;
+    }
+    label #cancel{
+        display: none;
+        padding-top: 10px;
+        margin-bottom: -68px;
+        margin-left: 360px;
+        
+    }
+    .nav-links{
+        margin-left: 0px;
+        margin-top: 0px;
+        position: fixed;
+        top: 36px;
+        left: -100%;
+        width: 70%;
+        height: 100vh;
+        background: #000000c7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s; 
+        ;
+        
+        
+    }
+    li{ 
+        display: block;
+        margin: 40px 0px;
+        line-height: 30px;
+    }
+    a{
+        font-size: 25px;
+    }
+    #check:checked ~ ul{
+        left: -7%;
+        transition: all 0.5s;
+        
+    }
+    #check:checked ~ label #btn{
+        display: none;
+    }
+
+    #check:checked ~ label #cancel{
+        display: block;
+        
+    }
+    h1{
+        margin-left: -150px;
+        font-size: 26px;
+    }
+    h6{
+        margin-left: -150px;
+        font-size: 16px;
+    }
+    .ilyes{
+        margin-left: 6px;
+        font-size: 26px;
+    }
+    .container2{
+        font-size: 23px;
+        margin-left: -290px;
+        justify-content: space-evenly;
+    }
+    body{
+    background-position-y:-75% ;    
+    background-size: 1200px;
+    }
+
+}
+
+
+
+
+@media (min-width: 668px) and (max-width: 1023px) {
     .container {
         max-width: 720px;
     }
