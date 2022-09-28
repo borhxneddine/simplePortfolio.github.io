@@ -272,6 +272,10 @@ h6{
         margin-left: -150px;
         font-size: 12px;
     }
+    #vide{
+        margin-top: -11px;
+        
+    }
     .ilyes{
         margin-left: 6px;
         font-size: 23px;
@@ -353,12 +357,16 @@ h6{
         
     }
     h1{
-        margin-left: -150px;
+        margin-left: -140px;
         font-size: 26px;
     }
     h6{
-        margin-left: -150px;
+        margin-left: -140px;
         font-size: 16px;
+    }
+    #vide{
+        margin-top: -11px;
+        
     }
     .ilyes{
         margin-left: 6px;
