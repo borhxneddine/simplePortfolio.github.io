@@ -1,0 +1,328 @@
+
+body {
+    background-image: url(../images/background3.jpg);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    overflow-x: hidden;
+    background-color: #000000;
+}
+
+
+
+
+
+
+nav{
+    background-color: #000000;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    opacity: 0.8;
+}
+
+
+label #btn, label #cancel{
+    color: aliceblue;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+.logo{
+    padding-left: 100px;
+    padding-top: 20px;
+    width: 160px;
+    font-family: secondfont;
+    font-size: large;
+    color: crimson;
+    cursor: pointer;
+}
+
+.logo :hover{
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+
+.nav-links{
+
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 800;  
+    list-style: none;
+    margin-top: -50px;
+    margin-left: 850px;    
+    
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.7s ease;
+}
+
+
+.nav-links a:hover:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 85px;
+    height: 3px;
+    margin-top: 10px;
+    background: crimson;
+    transition: all 0.7s;
+    
+}
+
+
+
+h1{
+    font-size: 50px;
+    
+
+}
+
+h6{
+   
+    font-size: 15px;
+}
+  
+@font-face {
+    font-family: FirstFont;
+    src: url(./fonts/Gelasio-Regular.ttf);
+    font-weight: bold;
+  }
+@font-face {
+    font-family: SecondFont;
+    src: url(./fonts/Gelasio-SemiBoldItalic.ttf);
+    font-weight: larger;
+}
+
+.full{
+    font-family: FirstFont;
+    color: aliceblue;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    padding-left: 150px;
+    padding-top: 150px;
+}
+
+.header{
+   
+    display: flex;
+    margin-bottom: -30px;
+    
+}
+
+
+.ilyes{
+    font-family: SecondFont;
+    color: crimson;
+    font-size: 50px;
+    margin-left: 20px;
+    transition: ease-out 0.5s;
+
+
+}
+
+
+.ilyes:hover{
+    color: #fff;
+    transition: ease-out 0.5s;
+}
+.container2{
+    width:300px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 150px;
+      
+
+
+}
+
+
+#description{
+    margin-top: -15px;
+    padding-left: 400px;
+   
+}
+
+
+.container2 i{
+    color: #fff;
+    box-shadow: 0 0 20px 10px rgba(0, 0,0, 0.05);
+    border-radius: 50%;
+}
+
+
+.container2 :hover{
+    color:crimson;
+    cursor: pointer;
+    font-size: larger;
+    transition: color 0.4s ease-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and  (max-width: 767px) {
+    .container {
+        
+        max-width: 540px;
+    }
+    .logo{
+        padding-left: 20px;
+        padding-top: 20px;
+        
+    }
+
+    label #btn{
+        display: block;
+        padding-top: 10px;
+        margin-bottom: -68px;
+        margin-left: 450px;
+    }
+    label #cancel{
+        display: none;
+        padding-top: 10px;
+        margin-bottom: -68px;
+        margin-left: 450px;
+        
+    }
+    .nav-links{
+        margin-left: 0px;
+        margin-top: 0px;
+        position: fixed;
+        top: 36px;
+        left: -200%;
+        width: 90%;
+        height: 100vh;
+        background: #000000c7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s; 
+        ;
+        
+        
+    }
+    li{ 
+        display: block;
+        margin: 40px 0;
+        line-height: 30px;
+    }
+    a{
+        font-size: 25px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        transition: all 0.5s;
+        
+    }
+    #check:checked ~ label #btn{
+        display: none;
+    }
+
+    #check:checked ~ label #cancel{
+        display: block;
+        
+    }
+    h1{
+        margin-left: -120px;
+        font-size: 28px;
+    }
+    h6{
+        margin-left: -120px;
+        font-size: 12px;
+    }
+    .ilyes{
+        margin-left: 10px;
+        font-size: 28px;
+    }
+    .container2{
+        font-size: 20px;
+        margin-left: -250px;
+        justify-content: space-evenly;
+    }
+    body{
+    background-position-y:-40% ;    
+    background-size: 1100px;
+    }
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 720px;
+    }
+    .nav-links{
+        margin-left: 380px;
+    }
+    h1{
+        margin-left: -120px;
+        font-size: 38px;
+    }
+    h6{
+        margin-left: -120px;
+        font-size: 14px;
+    }
+    .ilyes{
+        margin-left: 10px;
+        font-size: 38px;
+    }
+    .container2{
+        font-size: 25px;
+        margin-left: -250px;
+        justify-content: space-evenly;
+    }
+    body{
+    background-position-y:-40% ;    
+    background-size: 1100px;
+    }
+}
+
+@media (min-width:1023px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
